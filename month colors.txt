@@ -1,0 +1,5 @@
+dec - jan : White
+feb - march : Blue
+april - june : Green
+july - august : Yellow
+Sept - nov : Red

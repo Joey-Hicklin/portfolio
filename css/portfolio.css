@@ -1,0 +1,601 @@
+#skills {
+  display: none; }
+
+body {
+  max-height: 100vh;
+  display: none;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #a4a1d0;
+  font-family: "shadows into light","sans-serif";
+  font-weight: 300;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  overflow: hidden;
+  display: none; }
+
+body:hover {
+  cursor: default; }
+
+#bodyWrapper {
+  overflow: hidden; }
+
+#profile {
+  position: absolute;
+  width: 10vw;
+  height: 10vw;
+  font-size: 4.5vw;
+  font-weight: bold;
+  font-family: 'shadows into light', 'sans-serif';
+  border-radius: 2vw;
+  margin: 3vw 0 0 3vw; }
+
+#profile:hover {
+  cursor: pointer; }
+
+#profile:focus {
+  outline: 0; }
+
+@media (orientation: portrait) {
+  #profile {
+    width: 25vw;
+    height: 25vw;
+    font-size: 11.5vw; } }
+#contactBox {
+  position: absolute;
+  height: 41vw;
+  bottom: -43.15vw;
+  left: 2vw;
+  font-size: 2vw;
+  font-family: "Advent Pro", sans-serif;
+  border-top-right-radius: 0.7vw;
+  width: 35vw;
+  padding: 1vw;
+  z-index: 3; }
+  #contactBox #contactButton {
+    position: absolute;
+    top: -1.7vw;
+    left: 0vw;
+    font-size: 1vw;
+    font-family: "advent pro", serif;
+    color: black;
+    border-left: none;
+    border-bottom: none;
+    border-radius: 0.5vw;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    padding: 0.2vw 1vw;
+    transition: color 1s, border 1s; }
+  #contactBox #contactButton:hover {
+    cursor: pointer;
+    color: black;
+    border-left: none;
+    border-bottom: none;
+    transition: color 1s, border 1s; }
+  #contactBox form input[type='text'], #contactBox form textarea {
+    font-family: "shadows into light", serif;
+    font-size: 2vw;
+    width: 93%;
+    padding: 0.5vw 1vw;
+    border: 0.1vw solid rgba(0, 0, 0, 0.1);
+    text-shadow: 0.1vw 0.1vw rgba(0, 0, 0, 0.1);
+    margin-bottom: 1vw; }
+  #contactBox form textarea {
+    resize: none;
+    overflow: auto;
+    word-wrap: break-word; }
+  #contactBox form #contactSubmit {
+    position: absolute;
+    right: 2vw;
+    padding: 0.5vw 1vw;
+    font-family: "Advent Pro", sans-serif;
+    font-weight: bold;
+    font-size: 3vw;
+    border-radius: 0.5vw; }
+  #contactBox form #contactSubmit:hover {
+    cursor: pointer; }
+  #contactBox #contactInfo {
+    position: absolute;
+    bottom: 1vw; }
+
+#currentWorkButton {
+  display: none;
+  position: fixed;
+  top: -5vw;
+  right: -5vw;
+  width: 10vw;
+  height: 10vw;
+  border: 0.1vw solid red;
+  background-color: #d0a1a1;
+  border-radius: 100%; }
+
+#themeName {
+  position: absolute;
+  right: 2.3vw;
+  bottom: 0.5vw;
+  font-size: 1.3vw; }
+
+@media (max-width: 1000px) and (orientation: landscape) {
+  #contactBox {
+    height: 49vw;
+    width: 50vw;
+    bottom: -51.1vw; }
+    #contactBox #contactButton {
+      top: -3.4vw;
+      font-size: 2.5vw;
+      border-radius: 0.7vw;
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0; }
+    #contactBox form input[type='text'], #contactBox form textarea {
+      font-size: 2.5vw; }
+    #contactBox form #contactSubmit {
+      right: 3vw;
+      bottom: 4vw; }
+    #contactBox #contactInfo .contactInfoItem {
+      font-size: 2.5vw; }
+
+  #themeName {
+    font-size: 2vw; } }
+@media (orientation: portrait) {
+  #contactBox {
+    height: 78vh;
+    width: 94vw;
+    bottom: -79.3vh; }
+    #contactBox #contactButton {
+      font-size: 3.5vh;
+      top: -4.3vh;
+      border-radius: 1vh;
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0; }
+    #contactBox form input[type='text'], #contactBox form textarea {
+      position: relative;
+      left: 0.5vh;
+      top: 1vw;
+      font-size: 4vh;
+      width: 96%;
+      margin-bottom: 2vh; }
+    #contactBox form #contactSubmit {
+      right: 2vh;
+      bottom: 11vh;
+      font-size: 4.5vh;
+      padding: 0.5vh 2vh; }
+    #contactBox #contactInfo .contactInfoItem {
+      font-size: 4.3vh;
+      padding: 0vh 1vh; }
+
+  #themeName {
+    font-size: 2vh;
+    bottom: 0.5vh;
+    right: 1vh; } }
+#myName, #myEmail {
+  position: absolute;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 2vw;
+  bottom: 0.1vw;
+  -ms-user-select: text;
+  -moz-user-select: text;
+  -webkit-user-select: text;
+  z-index: 2; }
+
+#myName {
+  left: 15vw; }
+
+#myEmail {
+  right: 2vw; }
+
+#gradientBox {
+  position: absolute;
+  bottom: 0;
+  left: 13vw;
+  width: 87vw;
+  height: 3vw;
+  -webkit-filter: blur(20px);
+  z-index: 1; }
+
+#gradient {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), white); }
+
+#gradientSolid {
+  width: 100%;
+  height: 0%;
+  background-color: white; }
+
+@media (max-width: 1000px) and (orientation: landscape) {
+  #myName, #myEmail {
+    font-size: 3vw; }
+
+  #myName {
+    left: 22vw; }
+
+  #gradientBox {
+    left: 20vw;
+    width: 80vw; } }
+@media (orientation: portrait) {
+  #gradientBox {
+    left: 40vw;
+    height: 8vw;
+    width: 56vw; }
+
+  #myName, #myEmail {
+    bottom: 0.5vw;
+    font-size: 4.2vw; }
+
+  #myName {
+    left: 41vw; }
+
+  #myEmail {
+    right: 4vw; } }
+.bio {
+  position: absolute;
+  font-size: 3.2vw;
+  line-height: 1.5;
+  -ms-user-select: text;
+  -moz-user-select: text;
+  -webkit-user-select: text;
+  z-index: -2; }
+
+.bioI {
+  color: white; }
+
+#bioIBox {
+  position: absolute;
+  width: 100vw;
+  height: 0vh;
+  opacity: 0;
+  background-color: black;
+  z-index: -1;
+  overflow: hidden; }
+
+.bio1 {
+  width: 81vw;
+  top: 1.3vw;
+  left: 16vw; }
+
+.bio2 {
+  width: 83vw;
+  top: 5.8vw;
+  left: 16vw; }
+
+.bio3 {
+  width: 83vw;
+  top: 10.3vw;
+  left: 16vw; }
+
+.bio4 {
+  width: 96vw;
+  top: 14.8vw;
+  left: 2vw; }
+
+@media (orientation: portrait) {
+  .bio {
+    display: none; }
+
+  .bio1 {
+    display: block;
+    height: 75vh;
+    width: 92vw;
+    top: 30vw;
+    left: 4vw;
+    overflow: auto;
+    font-size: 6.5vw; }
+
+  #bioIBox .bio1 {
+    overflow: hidden; } }
+#skills {
+  position: absolute;
+  height: 83vh;
+  width: 100vw;
+  display: none;
+  top: 0;
+  left: 0;
+  z-index: -1; }
+  #skills #skillsBox {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 99%;
+    width: 88%;
+    position: relative;
+    left: 7vw; }
+    #skills #skillsBox .statBox {
+      position: relative;
+      margin-bottom: 5vw;
+      width: 80%;
+      left: 50%;
+      transform: translate(-50%); }
+      #skills #skillsBox .statBox .statIcon {
+        display: inline-block;
+        border-radius: 1vw;
+        height: 5.4vw;
+        width: 10%; }
+        #skills #skillsBox .statBox .statIcon img {
+          width: 100%;
+          position: relative;
+          top: 50%;
+          transform: translateY(-50%);
+          display: inline-block;
+          vertical-align: top; }
+      #skills #skillsBox .statBox .statBarBox {
+        box-sizing: content-box;
+        display: inline-block;
+        background-color: rgba(255, 255, 255, 0.1);
+        vertical-align: top;
+        border: 0.2vw solid black;
+        height: 100%;
+        width: 85%; }
+        #skills #skillsBox .statBox .statBarBox .statBar {
+          min-width: 10%;
+          height: 5vw; }
+        #skills #skillsBox .statBox .statBarBox .htmlSkill {
+          background-color: #e44d26;
+          width: 95%; }
+        #skills #skillsBox .statBox .statBarBox .cssSkill {
+          background-color: #1758a7;
+          width: 90%; }
+        #skills #skillsBox .statBox .statBarBox .nodeSkill {
+          background-color: #90c53f;
+          width: 70%; }
+        #skills #skillsBox .statBox .statBarBox .reactSkill {
+          background-color: #00d8ff;
+          width: 50%; }
+        #skills #skillsBox .statBox .statBarBox .webpackSkill {
+          background-color: #a4bfe9;
+          width: 60%; }
+        #skills #skillsBox .statBox .statBarBox .phpSkill {
+          background-color: #6c7eb7;
+          width: 90%; }
+        #skills #skillsBox .statBox .statBarBox .sqlSkill {
+          background-color: #8c2848;
+          width: 80%; }
+        #skills #skillsBox .statBox .statBarBox .jsSkill {
+          background-color: #fed93d;
+          width: 95%; }
+        #skills #skillsBox .statBox .statBarBox .jqSkill {
+          background-color: #193556;
+          width: 90%; }
+        #skills #skillsBox .statBox .statBarBox .ajaxSkill {
+          background-color: #0072bc;
+          width: 78%; }
+        #skills #skillsBox .statBox .statBarBox .pySkill {
+          background-color: #3770a0;
+          width: 65%; }
+        #skills #skillsBox .statBox .statBarBox .psSkill {
+          background-color: #81bdf9;
+          width: 75%; }
+        #skills #skillsBox .statBox .statBarBox .aiSkill {
+          background-color: #ffb43e;
+          width: 50%; }
+        #skills #skillsBox .statBox .statBarBox .aeSkill {
+          background-color: #d2a4ff;
+          width: 70%; }
+        #skills #skillsBox .statBox .statBarBox .prSkill {
+          background-color: #dc6bff;
+          width: 40%; }
+      #skills #skillsBox .statBox .statText {
+        display: none;
+        position: relative;
+        color: black;
+        left: 11%;
+        width: 82%;
+        font-size: 2vw;
+        font-family: "Advent Pro", sans-serif;
+        padding: 0.5vw 1vw;
+        margin-top: 0.1vw;
+        border: 0.2vw solid rgba(0, 0, 0, 0.1);
+        background-color: rgba(255, 255, 255, 0.5);
+        box-shadow: 0vw 0vw 5vw 2vw rgba(255, 255, 255, 0.5);
+        border-top: none;
+        border-left: none;
+        z-index: -1; }
+        #skills #skillsBox .statBox .statText .sharpText {
+          position: absolute;
+          color: white;
+          width: 96.6%;
+          left: 0;
+          top: 0;
+          -webkit-filter: blur(3px);
+          font-size: 2vw;
+          font-family: "Advent Pro", sans-serif;
+          padding: 0.5vw 1vw;
+          margin-top: 0.1vw;
+          border: 0.2vw solid rgba(0, 0, 0, 0.1);
+          border-top: none;
+          border-left: none;
+          z-index: -1; }
+    #skills #skillsBox .statBox:hover {
+      cursor: pointer; }
+    #skills #skillsBox .statBox:first-child {
+      margin-top: 25vh; }
+    #skills #skillsBox .statBox:last-child {
+      margin-bottom: 10vh; }
+
+#skillTopBlur {
+  position: absolute;
+  height: 20%;
+  width: 100%;
+  background: linear-gradient(black, transparent);
+  z-index: 2;
+  pointer-events: none; }
+
+#skillBottomBlur {
+  position: absolute;
+  bottom: 0;
+  height: 20%;
+  width: 100%;
+  background: linear-gradient(transparent, black);
+  z-index: 2;
+  pointer-events: none; }
+
+.statChevron {
+  position: absolute;
+  color: white;
+  font-family: "Advent Pro", sans-serif;
+  left: 50%;
+  font-size: 5vw;
+  transform: rotate(180deg) scaleX(3); }
+
+.statChevron1 {
+  top: -60%;
+  -webkit-animation: chevron1 1.3s infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  animation: chevron1 1.3s infinite;
+  animation-timing-function: ease-in-out; }
+
+.statChevron2 {
+  top: -44%;
+  -webkit-animation: chevron2 1.3s infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  animation: chevron2 1.3s infinite;
+  animation-timing-function: ease-in-out; }
+
+.statChevron3 {
+  top: -29%;
+  -webkit-animation: chevron3 1.3s infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  animation: chevron3 1.3s infinite;
+  animation-timing-function: ease-in-out; }
+
+@media (max-width: 1000px) and (orientation: landscape) {
+  #skills #skillsBox .statBox .statText {
+    font-size: 3vw; }
+
+  .sharpText {
+    display: none; }
+
+  #skillTopBlur {
+    top: 0; } }
+@media (orientation: portrait) {
+  #skills {
+    padding: 0;
+    height: 75vh;
+    width: 100vw;
+    top: 17vh;
+    left: 0; }
+    #skills #skillsBox {
+      padding: 1vw 2vw;
+      left: 0; }
+      #skills #skillsBox .statBox {
+        margin-bottom: 5vw;
+        width: 95%; }
+        #skills #skillsBox .statBox .statIcon {
+          height: 19vw;
+          width: 20%; }
+          #skills #skillsBox .statBox .statIcon img {
+            width: 90%; }
+        #skills #skillsBox .statBox .statBarBox {
+          transform: translateY(25%);
+          border: 0.7vw solid black;
+          width: 75%; }
+          #skills #skillsBox .statBox .statBarBox .statBar {
+            height: 12vw; }
+        #skills #skillsBox .statBox .statText {
+          font-size: 6vw;
+          left: 4vw;
+          top: 2vw;
+          width: 88%;
+          border: 0.5vw solid rgba(0, 0, 0, 0.1);
+          border-top: none; }
+          #skills #skillsBox .statBox .statText .sharpText {
+            display: none; }
+      #skills #skillsBox .statBox:first-child {
+        margin-top: 0; }
+
+  #skillTopBlur {
+    display: none; }
+
+  #skillBottomBlur {
+    display: none; }
+
+  .statChevron1 {
+    top: -5%; }
+
+  .statChevron2 {
+    top: 6%; }
+
+  .statChevron3 {
+    top: 18%; } }
+@-webkit-keyframes chevron1 {
+  0%, 60%, 100% {
+    opacity: 0; }
+  30%, 36% {
+    opacity: 1; } }
+@keyframes chevron1 {
+  0%, 60%, 100% {
+    opacity: 0; }
+  30%, 36% {
+    opacity: 1; } }
+@-webkit-keyframes chevron2 {
+  0%, 17%, 83%, 100% {
+    opacity: 0; }
+  47%, 53% {
+    opacity: 1; } }
+@keyframes chevron2 {
+  0%, 17%, 83%, 100% {
+    opacity: 0; }
+  47%, 53% {
+    opacity: 1; } }
+@-webkit-keyframes chevron3 {
+  0%, 33%, 99%, 100% {
+    opacity: 0; }
+  63%, 69% {
+    opacity: 1; } }
+@keyframes chevron3 {
+  0%, 33%, 99%, 100% {
+    opacity: 0; }
+  63%, 69% {
+    opacity: 1; } }
+@-webkit-keyframes seasonPulseWinter {
+  0%, 100% {
+    box-shadow: #1758a7 0px 0px 0px 0px; }
+  50% {
+    box-shadow: #1758a7 0px 0px 30px 5px; } }
+@keyframes seasonPulseWinter {
+  0%, 100% {
+    box-shadow: #1758a7 0px 0px 0px 0px; }
+  50% {
+    box-shadow: #1758a7 0px 0px 30px 5px; } }
+@-webkit-keyframes seasonPulseWS {
+  0%, 100% {
+    box-shadow: #1fa51a 0px 0px 0px 0px; }
+  50% {
+    box-shadow: #1fa51a 0px 0px 30px 5px; } }
+@keyframes seasonPulseWS {
+  0%, 100% {
+    box-shadow: #1fa51a 0px 0px 0px 0px; }
+  50% {
+    box-shadow: #1fa51a 0px 0px 30px 5px; } }
+@-webkit-keyframes seasonPulseSpring {
+  0%, 100% {
+    box-shadow: #3f8b01 0px 0px 0px 0px; }
+  50% {
+    box-shadow: #3f8b01 0px 0px 30px 5px; } }
+@keyframes seasonPulseSpring {
+  0%, 100% {
+    box-shadow: #3f8b01 0px 0px 0px 0px; }
+  50% {
+    box-shadow: #3f8b01 0px 0px 30px 5px; } }
+@-webkit-keyframes seasonPulseSummer {
+  0%, 100% {
+    box-shadow: #e5900e 0px 0px 0px 0px; }
+  50% {
+    box-shadow: #e5900e 0px 0px 30px 5px; } }
+@keyframes seasonPulseSummer {
+  0%, 100% {
+    box-shadow: #e5900e 0px 0px 0px 0px; }
+  50% {
+    box-shadow: #e5900e 0px 0px 30px 5px; } }
+@-webkit-keyframes seasonPulseAutumn {
+  0%, 100% {
+    box-shadow: #fcd62b 0px 0px 0px 0px; }
+  50% {
+    box-shadow: #fcd62b 0px 0px 30px 5px; } }
+@keyframes seasonPulseAutumn {
+  0%, 100% {
+    box-shadow: #fcd62b 0px 0px 0px 0px; }
+  50% {
+    box-shadow: #fcd62b 0px 0px 30px 5px; } }
+
+/*# sourceMappingURL=portfolio.css.map */
